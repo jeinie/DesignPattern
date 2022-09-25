@@ -10,6 +10,7 @@ public class CartForSongs {
         double total = 0.0;
         Iterator<Song> itr = cart.iterator();
 
+        /*
         while(itr.hasNext()) {
             Song s = itr.next();
             if (s.getDiscountMode().equals("OnSale")) total = total + (s.getPrice()-0.1*s.getPrice());
@@ -17,6 +18,12 @@ public class CartForSongs {
             // 새로운 폭탄 페일이라는 모드가 추가되는 경우 calculateTotalPrice() method가 계속해서 변경되어야 한다.
             else if(s.getDiscountMode().equals("BombingSale")) total = total + (s.getPrice()-0.7*s.getPrice());
             else total = total + s.getPrice();
+        }
+        */
+
+        while(itr.hasNext()) {
+            Song s = itr.next();
+            total = total + s.getPrice();
         }
         return total;
     }
