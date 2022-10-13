@@ -61,6 +61,7 @@ public class BallMachine {
             System.out.println("손잡이를 돌리셨습니다.");
             state = SOLD;
             // 볼 내보내기 수행
+            dispense();
         }
         else if (state == NO_COIN) {
             System.out.println("동전을 넣어주세요");
@@ -95,5 +96,13 @@ public class BallMachine {
                 state = NO_COIN;
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        return "BallMachine{" +
+                "state=" + state +
+                ", count=" + count +
+                '}';
     }
 }
