@@ -1,3 +1,5 @@
+package prac;
+
 public class WalkingStrategy implements MovingStrategy {
     @Override
     public void move() {

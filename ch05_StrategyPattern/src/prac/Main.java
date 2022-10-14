@@ -1,9 +1,11 @@
+package prac;
+
 // Strategy Pattern
 // 각 변경사하을 클래스로 캡슐화
 public class Main {
     public static void main(String[] args) {
-        Robot taekwonV = new TaekwonV("TaekwonV");
-        Robot atom = new Atom("Atom");
+        Robot taekwonV = new TaekwonV("prac.TaekwonV");
+        Robot atom = new Atom("prac.Atom");
 
         // taekwonV 이동 기능, 공격 기능 설정
         taekwonV.setMovingStrategy(new WalkingStrategy());

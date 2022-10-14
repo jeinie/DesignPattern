@@ -1,3 +1,5 @@
+package prac;
+
 public abstract class Robot {
     private String name;
     private MovingStrategy movingStrategy;

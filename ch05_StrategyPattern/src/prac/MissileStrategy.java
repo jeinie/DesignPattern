@@ -1,3 +1,5 @@
+package prac;
+
 public class MissileStrategy implements AttackStrategy {
     @Override
     public void attack() {

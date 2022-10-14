@@ -1,3 +1,5 @@
+package prac;
+
 public class FlyingStrategy implements MovingStrategy{
     @Override
     public void move() {
