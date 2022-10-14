@@ -1,3 +1,5 @@
+// Strategy Pattern
+// 각 변경사하을 클래스로 캡슐화
 public class Main {
     public static void main(String[] args) {
         Robot taekwonV = new TaekwonV("TaekwonV");
