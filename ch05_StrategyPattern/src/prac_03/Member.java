@@ -12,5 +12,6 @@ public class Member {
     public void buyBook(Book b) {
         totalPrice += b.getPrice();
         System.out.println(this.name + "님이 " + b.getTitle() + "을 구매하셨습니다");
+        System.out.println(this.name + "님의 누적 금액은 " + totalPrice + "원 입니다.");
     }
 }
